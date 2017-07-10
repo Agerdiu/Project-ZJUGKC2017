@@ -11,11 +11,14 @@ sys.setdefaultencoding('utf8')
 info_Home = {}
 info_Away = {}
 
-url = 'https://www.whoscored.com/Matches/1090797/Live/Germany-Bundesliga-2016-2017-Borussia-Dortmund-Werder-Bremen'
+#url = 'https://www.whoscored.com/Matches/1080751/Live'
+url = 'https://www.whoscored.com/Matches/1080760/Live/England-Premier-League-2016-2017-Southampton-Leicester'
 driver = webdriver.Chrome()
 driver.get(url)
 data = BeautifulSoup(driver.page_source,"html.parser")
 
+#data = BeautifulSoup(open('d:/test1.html'), "html.parser")
+print type(data)
 team_data = data.find("ul", class_ = "match-centre-stats", attrs = {"data-mode": "team"})
 
 x = team_data.find_next("li", attrs = {"data-for": "ratings"})
@@ -30,6 +33,7 @@ x = team_data.find_next("li", attrs = {"data-for": "possession"})
 info_Home["possession"] = ((x.find_next("span", attrs = {"data-field": "home"})).string)
 info_Away["possession"] = ((x.find_next("span", attrs = {"data-field": "away"})).string)
 
+x = team_data.find_next("li", attrs = {"data-for": "passSuccess"})
 info_Home["pass_success"] = ((x.find_next("span", attrs = {"data-field": "home"})).string)
 info_Away["pass_success"] = ((x.find_next("span", attrs = {"data-field": "away"})).string)
 
@@ -72,7 +76,7 @@ y = x.find_next("dd")
 x = y.find_next_sibling("dd")
 date = x.string
 
-fo = open("output.txt", "w")
+fo = open("output.txt", "a+")
 list = {}
 data = {}
 list["home"]=info_Home
@@ -85,6 +89,7 @@ data["list"] = list
 jsonStr = json.dumps(data)  
 fo.write("jsonStr:")
 fo.write(jsonStr)
+fo.write('\n')
 
 #fo = open("output.txt", "w")
 #fo.write(data.prettify())
