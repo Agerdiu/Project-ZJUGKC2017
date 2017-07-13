@@ -56,7 +56,7 @@ Item {
 
     Component.onCompleted: {
         ds1.preparebarseries(series,data_controll.LeagueName,data_controll.TeamName,"corners",false)
-        ds1.preparebarseries(cmp,"","","",true)
+        ds1.preparebarseries(cmp,data_controll.LeagueLock,data_controll.TeamLock,"corners",true)
     }
     Connections{
         target: data_controll

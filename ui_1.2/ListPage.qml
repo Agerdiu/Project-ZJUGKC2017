@@ -37,7 +37,7 @@ ScrollView {
             Text{
                 id:teamname
                 anchors.left: parent.left
-                anchors.leftMargin: 40
+                anchors.leftMargin: 60
                 anchors.verticalCenter:  parent.verticalCenter
                 text:"球队"
                 font.family: "微软雅黑"
@@ -46,8 +46,8 @@ ScrollView {
             }
             Text{
                 id:win
-                anchors.left: teamname.right
-                anchors.leftMargin : 70
+                anchors.right: parent.right
+                anchors.rightMargin: 150
                 text:"胜"
                 anchors.verticalCenter:  parent.verticalCenter
                 font.family: "微软雅黑"
@@ -56,8 +56,8 @@ ScrollView {
             }
             Text{
                 id:draw
-                anchors.left: win.right
-                anchors.leftMargin : 25
+                anchors.right: parent.right
+                anchors.rightMargin: 115
                 text:"平"
                 anchors.verticalCenter:  parent.verticalCenter
                 font.family: "微软雅黑"
@@ -66,8 +66,8 @@ ScrollView {
             }
             Text{
                 id:loss
-                anchors.left: draw.right
-                anchors.leftMargin : 20
+                anchors.right: parent.right
+                anchors.rightMargin: 80
                 text:"负"
                 anchors.verticalCenter:  parent.verticalCenter
                 font.family: "微软雅黑"
@@ -76,8 +76,8 @@ ScrollView {
             }
             Text{
                 id:score
-                anchors.left: loss.right
-                anchors.leftMargin : 20
+                anchors.right: parent.right
+                anchors.rightMargin: 30
                 text:"积分"
                 anchors.verticalCenter : parent.verticalCenter
                 font.family: "微软雅黑"

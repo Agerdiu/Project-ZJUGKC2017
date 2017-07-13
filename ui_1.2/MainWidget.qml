@@ -109,7 +109,7 @@ Rectangle {
         }
 
     ]
-
+/*
     transitions:
     [
         Transition
@@ -122,5 +122,5 @@ Rectangle {
                 easing.amplitude: 0.5
             }
         }
-    ]
+    ]*/
 }

@@ -53,8 +53,8 @@ Item {
         width: 60
         wrapMode: Text.WordWrap
         anchors.verticalCenter: parent.verticalCenter
-        anchors.left: text_rank.right
-        anchors.leftMargin:10
+        anchors.left: parent.left
+        anchors.leftMargin: 40
     }
     Text {
         id: team_win

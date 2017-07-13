@@ -81,7 +81,7 @@ Item {
 
     Component.onCompleted: {
         ds1.preparelineseries(series1,data_controll.LeagueName,data_controll.TeamName,"possession")
-        ds1.preparelineseries(cmp,"","","")
+        ds1.preparelineseries(cmp,data_controll.LeagueLock,data_controll.TeamLock,"possession")
     }
     Connections{
         target: data_controll
