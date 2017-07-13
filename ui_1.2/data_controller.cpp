@@ -47,15 +47,17 @@ QList<QObject*>Data_Controller::getTeamList(QString league_name)
     QList<TeamData*>TeamList2;
     QFile file;
     qWarning("The League Name is %s\n",league_name.toUtf8().data());
+    file.setFileName("data/"+league_name+".txt");
+    /*
     if(league_name=="XiJia")
-        file.setFileName("XiJia.txt");
+        file.setFileName("data/XiJia.txt");
     else if(league_name=="DeJia")
         file.setFileName("DeJia.txt");
     else if(league_name=="YinChao")
         file.setFileName("YinChao.txt");
     else if(league_name=="YiJia")
-        file.setFileName("C:YiJia.txt");
-    else  file.setFileName("C:XiJia.txt");
+        file.setFileName("YiJia.txt");
+    else  file.setFileName("XiJia.txt");*/
     file.open(QIODevice::ReadOnly | QIODevice::Text);
     QString val = file.readAll();
     //qWarning(val.toUtf8().data());
@@ -137,7 +139,7 @@ QList<QObject*> Data_Controller::getTeamMemList(QString teamname)
 {
     memlist.clear();
     QFile file;
-    file.setFileName("./"+league_index+"Player/"+teamname+"_players.JSON");
+    file.setFileName("./data/"+league_index+"Player/"+teamname+"_players.JSON");
     file.open(QIODevice::ReadOnly | QIODevice::Text);
     QString val = file.readAll();
     file.close();

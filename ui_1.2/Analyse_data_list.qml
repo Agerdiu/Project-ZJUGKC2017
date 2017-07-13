@@ -31,9 +31,15 @@ Item {
         }
 
         model: ListModel {
+            ListElement {component: "ViewAerial.qml"}
+            ListElement {component: "ViewCorner.qml"}
+            ListElement {component: "ViewDispossessed.qml"}
+            ListElement {component: "ViewDribbles.qml"}
+            ListElement {component: "ViewPass.qml"}
             ListElement {component: "ViewPossession.qml"}
             ListElement {component: "ViewRating.qml"}
-            ListElement {component: "ViewCorner.qml"}
+            ListElement {component: "ViewShots.qml"}
+            ListElement {component: "ViewTackles.qml"}
         }
 
         delegate: Loader {

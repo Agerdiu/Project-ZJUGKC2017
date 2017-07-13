@@ -44,7 +44,6 @@ Item {
         antialiasing: true
         dropShadowEnabled: true
         backgroundRoundness: 0
-        //plotAreaColor: "grey"
         theme:ChartView.ChartThemeQt
         ValueAxis {
             visible: false

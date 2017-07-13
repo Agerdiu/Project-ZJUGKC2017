@@ -6,7 +6,7 @@ Item {
 
     //![1]
     ChartView {
-        title: "Corners"
+        title: "Aerials Won"
         titleFont.family: "微软雅黑"
         titleFont.bold: true
         titleFont.pixelSize: 32
@@ -28,7 +28,7 @@ Item {
                 labelFormat: "%d"
                 tickCount: 5
                 min:0
-                max:20
+                max:40
             }
         }
         BarSeries {
@@ -41,7 +41,7 @@ Item {
             axisY: ValueAxis{
                 visible: false
                 min:0
-                max:20
+                max:40
             }
         }
         BarSeries {
@@ -55,18 +55,18 @@ Item {
     }
 
     Component.onCompleted: {
-        ds1.preparebarseries(series,data_controll.LeagueName,data_controll.TeamName,"corners",false)
-        ds1.preparebarseries(cmp,data_controll.LeagueLock,data_controll.TeamLock,"corners",true)
+        ds1.preparebarseries(series,data_controll.LeagueName,data_controll.TeamName,"aerials_won",false)
+        ds1.preparebarseries(cmp,data_controll.LeagueLock,data_controll.TeamLock,"aerials_won",true)
     }
     Connections{
         target: data_controll
         onTeamDataChanged:{
-            ds1.preparebarseries(series,data_controll.LeagueName,data_controll.TeamName,"corners",false)
-            ds1.preparebarseries(cmp,data_controll.LeagueLock,data_controll.TeamLock,"corners",true)
+            ds1.preparebarseries(series,data_controll.LeagueName,data_controll.TeamName,"aerials_won",false)
+            ds1.preparebarseries(cmp,data_controll.LeagueLock,data_controll.TeamLock,"aerials_won",true)
         }
         onTeamLockChanged:{
-            ds1.preparebarseries(series,data_controll.LeagueName,data_controll.TeamName,"corners",false)
-            ds1.preparebarseries(cmp,data_controll.LeagueLock,data_controll.TeamLock,"corners",true)
+            ds1.preparebarseries(series,data_controll.LeagueName,data_controll.TeamName,"aerials_won",false)
+            ds1.preparebarseries(cmp,data_controll.LeagueLock,data_controll.TeamLock,"aerials_won",true)
         }
     }
     //![1]

@@ -1,21 +1,15 @@
 <RCC>
     <qresource prefix="/">
         <file>Analyse_data_list.qml</file>
-         <file>Image/Animation.png</file>
+        <file>Image/Animation.png</file>
         <file>QChart.qml</file>
-         <file>PlayerDelegate.qml</file>
+        <file>PlayerDelegate.qml</file>
         <file>Image/background_purple.jpg</file>
-         <file>MemListView.qml</file>
+        <file>MemListView.qml</file>
         <file>Image/background_mem_list.png</file>
         <file>TeamTable.qml</file>
-        <file>View1.qml</file>
-        <file>XiJia.txt</file>
         <file>Mask.qml</file>
-       <file>YiJia.txt</file>
-       <file>Popup.qml</file>
-        <file>DeJia.txt</file>
-        <file>YinChao.txt</file>
-        <file>View2.qml</file>
+        <file>Popup.qml</file>
         <file>main.qml</file>
         <file>MainForm.ui.qml</file>
         <file>Image/background_mainwnd.jpg</file>
@@ -23,7 +17,7 @@
         <file>SysBtn.qml</file>
         <file>ScrollBar.qml</file>
         <file>Chart.js</file>
-	<file>QChart.js</file>
+        <file>QChart.js</file>
         <file>QChartGallery.js</file>
         <file>TabWidget.qml</file>
         <file>ToolBtn.qml</file>
@@ -57,164 +51,8 @@
         <file>Delegate.qml</file>
         <file>Image/background_list.jpg</file>
         <file>TeamIntro.qml</file>
-                <file>ViewPossession.qml</file>
+        <file>ViewPossession.qml</file>
         <file>ViewRating.qml</file>
-        <file>img/DeJia/Augsburg.jpg</file>
-        <file>img/DeJia/Augsburg.png</file>
-        <file>img/DeJia/Bayer Leverkusen.jpg</file>
-        <file>img/DeJia/Bayer Leverkusen.png</file>
-        <file>img/DeJia/Bayern Munich.jpg</file>
-        <file>img/DeJia/Bayern Munich.png</file>
-        <file>img/DeJia/Borussia Dortmund.jpg</file>
-        <file>img/DeJia/Borussia Dortmund.png</file>
-        <file>img/DeJia/Borussia M.Gladbach.jpg</file>
-        <file>img/DeJia/Borussia M.Gladbach.png</file>
-        <file>img/DeJia/Darmstadt.jpg</file>
-        <file>img/DeJia/Darmstadt.png</file>
-        <file>img/DeJia/Eintracht Frankfurt.jpg</file>
-        <file>img/DeJia/Eintracht Frankfurt.png</file>
-        <file>img/DeJia/FC Cologne.jpg</file>
-        <file>img/DeJia/FC Cologne.png</file>
-        <file>img/DeJia/Freiburg.jpg</file>
-        <file>img/DeJia/Freiburg.png</file>
-        <file>img/DeJia/Hamburger SV.jpg</file>
-        <file>img/DeJia/Hamburger SV.png</file>
-        <file>img/DeJia/Hertha Berlin.jpg</file>
-        <file>img/DeJia/Hertha Berlin.png</file>
-        <file>img/DeJia/Hoffenheim.jpg</file>
-        <file>img/DeJia/Hoffenheim.png</file>
-        <file>img/DeJia/Ingolstadt.jpg</file>
-        <file>img/DeJia/Ingolstadt.png</file>
-        <file>img/DeJia/Mainz 05.jpg</file>
-        <file>img/DeJia/Mainz 05.png</file>
-        <file>img/DeJia/RasenBallsport Leipzig.jpg</file>
-        <file>img/DeJia/RasenBallsport Leipzig.png</file>
-        <file>img/DeJia/Schalke 04.jpg</file>
-        <file>img/DeJia/Schalke 04.png</file>
-        <file>img/DeJia/Werder Bremen.jpg</file>
-        <file>img/DeJia/Werder Bremen.png</file>
-        <file>img/DeJia/Wolfsburg.jpg</file>
-        <file>img/DeJia/Wolfsburg.png</file>
-        <file>img/XiJia/Alaves.jpg</file>
-        <file>img/XiJia/Alaves.png</file>
-        <file>img/XiJia/Athletic Club.jpg</file>
-        <file>img/XiJia/Athletic Club.png</file>
-        <file>img/XiJia/Atletico Madrid.jpg</file>
-        <file>img/XiJia/Atletico Madrid.png</file>
-        <file>img/XiJia/Barcelona.jpg</file>
-        <file>img/XiJia/Barcelona.png</file>
-        <file>img/XiJia/Celta Vigo.jpg</file>
-        <file>img/XiJia/Celta Vigo.png</file>
-        <file>img/XiJia/Deportivo La Coruna.jpg</file>
-        <file>img/XiJia/Deportivo La Coruna.png</file>
-        <file>img/XiJia/Eibar.jpg</file>
-        <file>img/XiJia/Eibar.png</file>
-        <file>img/XiJia/Espanyol.jpg</file>
-        <file>img/XiJia/Espanyol.png</file>
-        <file>img/XiJia/Granada.jpg</file>
-        <file>img/XiJia/Granada.png</file>
-        <file>img/XiJia/Las Palmas.jpg</file>
-        <file>img/XiJia/Las Palmas.png</file>
-        <file>img/XiJia/Leganes.jpg</file>
-        <file>img/XiJia/Leganes.png</file>
-        <file>img/XiJia/Malaga.jpg</file>
-        <file>img/XiJia/Malaga.png</file>
-        <file>img/XiJia/Osasuna.jpg</file>
-        <file>img/XiJia/Osasuna.png</file>
-        <file>img/XiJia/Real Betis.jpg</file>
-        <file>img/XiJia/Real Betis.png</file>
-        <file>img/XiJia/Real Madrid.jpg</file>
-        <file>img/XiJia/Real Madrid.png</file>
-        <file>img/XiJia/Real Sociedad.jpg</file>
-        <file>img/XiJia/Real Sociedad.png</file>
-        <file>img/XiJia/Sevilla.jpg</file>
-        <file>img/XiJia/Sevilla.png</file>
-        <file>img/XiJia/Sporting Gijon.jpg</file>
-        <file>img/XiJia/Sporting Gijon.png</file>
-        <file>img/XiJia/Valencia.jpg</file>
-        <file>img/XiJia/Valencia.png</file>
-        <file>img/XiJia/Villarreal.jpg</file>
-        <file>img/XiJia/Villarreal.png</file>
-        <file>img/YiJia/AC Milan.jpg</file>
-        <file>img/YiJia/AC Milan.png</file>
-        <file>img/YiJia/Atalanta.jpg</file>
-        <file>img/YiJia/Atalanta.png</file>
-        <file>img/YiJia/Bologna.jpg</file>
-        <file>img/YiJia/Bologna.png</file>
-        <file>img/YiJia/Cagliari.jpg</file>
-        <file>img/YiJia/Cagliari.png</file>
-        <file>img/YiJia/Chievo.jpg</file>
-        <file>img/YiJia/Chievo.png</file>
-        <file>img/YiJia/Crotone.jpg</file>
-        <file>img/YiJia/Crotone.png</file>
-        <file>img/YiJia/Empoli.jpg</file>
-        <file>img/YiJia/Empoli.png</file>
-        <file>img/YiJia/Fiorentina.jpg</file>
-        <file>img/YiJia/Fiorentina.png</file>
-        <file>img/YiJia/Genoa.jpg</file>
-        <file>img/YiJia/Genoa.png</file>
-        <file>img/YiJia/Inter.jpg</file>
-        <file>img/YiJia/Inter.png</file>
-        <file>img/YiJia/Juventus.jpg</file>
-        <file>img/YiJia/Juventus.png</file>
-        <file>img/YiJia/Lazio.jpg</file>
-        <file>img/YiJia/Lazio.png</file>
-        <file>img/YiJia/Napoli.jpg</file>
-        <file>img/YiJia/Napoli.png</file>
-        <file>img/YiJia/Palermo.jpg</file>
-        <file>img/YiJia/Palermo.png</file>
-        <file>img/YiJia/Pescara.jpg</file>
-        <file>img/YiJia/Pescara.png</file>
-        <file>img/YiJia/Roma.jpg</file>
-        <file>img/YiJia/Roma.png</file>
-        <file>img/YiJia/Sampdoria.jpg</file>
-        <file>img/YiJia/Sampdoria.png</file>
-        <file>img/YiJia/Sassuolo.jpg</file>
-        <file>img/YiJia/Sassuolo.png</file>
-        <file>img/YiJia/Torino.jpg</file>
-        <file>img/YiJia/Torino.png</file>
-        <file>img/YiJia/Udinese.jpg</file>
-        <file>img/YiJia/Udinese.png</file>
-        <file>img/YinChao/Arsenal.jpg</file>
-        <file>img/YinChao/Arsenal.png</file>
-        <file>img/YinChao/Bournemouth.jpg</file>
-        <file>img/YinChao/Bournemouth.png</file>
-        <file>img/YinChao/Burnley.jpg</file>
-        <file>img/YinChao/Burnley.png</file>
-        <file>img/YinChao/Chelsea.jpg</file>
-        <file>img/YinChao/Chelsea.png</file>
-        <file>img/YinChao/Crystal Palace.jpg</file>
-        <file>img/YinChao/Crystal Palace.png</file>
-        <file>img/YinChao/Everton.jpg</file>
-        <file>img/YinChao/Everton.png</file>
-        <file>img/YinChao/Hull.jpg</file>
-        <file>img/YinChao/Hull.png</file>
-        <file>img/YinChao/Leicester.jpg</file>
-        <file>img/YinChao/Leicester.png</file>
-        <file>img/YinChao/Liverpool.jpg</file>
-        <file>img/YinChao/Liverpool.png</file>
-        <file>img/YinChao/Manchester City.jpg</file>
-        <file>img/YinChao/Manchester City.png</file>
-        <file>img/YinChao/Manchester United.jpg</file>
-        <file>img/YinChao/Manchester United.png</file>
-        <file>img/YinChao/Middlesbrough.jpg</file>
-        <file>img/YinChao/Middlesbrough.png</file>
-        <file>img/YinChao/Southampton.jpg</file>
-        <file>img/YinChao/Southampton.png</file>
-        <file>img/YinChao/Stoke.jpg</file>
-        <file>img/YinChao/Stoke.png</file>
-        <file>img/YinChao/Sunderland.jpg</file>
-        <file>img/YinChao/Sunderland.png</file>
-        <file>img/YinChao/Swansea.jpg</file>
-        <file>img/YinChao/Swansea.png</file>
-        <file>img/YinChao/Tottenham.jpg</file>
-        <file>img/YinChao/Tottenham.png</file>
-        <file>img/YinChao/Watford.jpg</file>
-        <file>img/YinChao/Watford.png</file>
-        <file>img/YinChao/West Bromwich Albion.jpg</file>
-        <file>img/YinChao/West Bromwich Albion.png</file>
-        <file>img/YinChao/West Ham.jpg</file>
-        <file>img/YinChao/West Ham.png</file>
         <file>rapidjson/error/en.h</file>
         <file>rapidjson/error/error.h</file>
         <file>rapidjson/internal/biginteger.h</file>
@@ -262,5 +100,185 @@
         <file>teamdata.cpp</file>
         <file>teamdata.h</file>
         <file>ViewCorner.qml</file>
+        <file>ViewAerial.qml</file>
+        <file>ViewPass.qml</file>
+        <file>ViewTackles.qml</file>
+        <file>ViewDribbles.qml</file>
+        <file>ViewShots.qml</file>
+        <file>ViewDispossessed.qml</file>
+        <file>Image/ico/DeJia/Augsburg.jpg</file>
+        <file>Image/ico/DeJia/Augsburg.png</file>
+        <file>Image/ico/DeJia/Bayer Leverkusen.jpg</file>
+        <file>Image/ico/DeJia/Bayer Leverkusen.png</file>
+        <file>Image/ico/DeJia/Bayern Munich.jpg</file>
+        <file>Image/ico/DeJia/Bayern Munich.png</file>
+        <file>Image/ico/DeJia/Borussia Dortmund.jpg</file>
+        <file>Image/ico/DeJia/Borussia Dortmund.png</file>
+        <file>Image/ico/DeJia/Borussia M.Gladbach.jpg</file>
+        <file>Image/ico/DeJia/Borussia M.Gladbach.png</file>
+        <file>Image/ico/DeJia/Darmstadt.jpg</file>
+        <file>Image/ico/DeJia/Darmstadt.png</file>
+        <file>Image/ico/DeJia/Eintracht Frankfurt.jpg</file>
+        <file>Image/ico/DeJia/Eintracht Frankfurt.png</file>
+        <file>Image/ico/DeJia/FC Cologne.jpg</file>
+        <file>Image/ico/DeJia/FC Cologne.png</file>
+        <file>Image/ico/DeJia/Freiburg.jpg</file>
+        <file>Image/ico/DeJia/Freiburg.png</file>
+        <file>Image/ico/DeJia/Hamburger SV.jpg</file>
+        <file>Image/ico/DeJia/Hamburger SV.png</file>
+        <file>Image/ico/DeJia/Hertha Berlin.jpg</file>
+        <file>Image/ico/DeJia/Hertha Berlin.png</file>
+        <file>Image/ico/DeJia/Hoffenheim.jpg</file>
+        <file>Image/ico/DeJia/Hoffenheim.png</file>
+        <file>Image/ico/DeJia/Ingolstadt.jpg</file>
+        <file>Image/ico/DeJia/Ingolstadt.png</file>
+        <file>Image/ico/DeJia/Mainz 05.jpg</file>
+        <file>Image/ico/DeJia/Mainz 05.png</file>
+        <file>Image/ico/DeJia/RasenBallsport Leipzig.jpg</file>
+        <file>Image/ico/DeJia/RasenBallsport Leipzig.png</file>
+        <file>Image/ico/DeJia/Schalke 04.jpg</file>
+        <file>Image/ico/DeJia/Schalke 04.png</file>
+        <file>Image/ico/DeJia/Werder Bremen.jpg</file>
+        <file>Image/ico/DeJia/Werder Bremen.png</file>
+        <file>Image/ico/DeJia/Wolfsburg.jpg</file>
+        <file>Image/ico/DeJia/Wolfsburg.png</file>
+        <file>Image/ico/XiJia/Alaves.jpg</file>
+        <file>Image/ico/XiJia/Alaves.png</file>
+        <file>Image/ico/XiJia/Athletic Club.jpg</file>
+        <file>Image/ico/XiJia/Athletic Club.png</file>
+        <file>Image/ico/XiJia/Atletico Madrid.jpg</file>
+        <file>Image/ico/XiJia/Atletico Madrid.png</file>
+        <file>Image/ico/XiJia/Barcelona.jpg</file>
+        <file>Image/ico/XiJia/Barcelona.png</file>
+        <file>Image/ico/XiJia/Celta Vigo.jpg</file>
+        <file>Image/ico/XiJia/Celta Vigo.png</file>
+        <file>Image/ico/XiJia/Deportivo La Coruna.jpg</file>
+        <file>Image/ico/XiJia/Deportivo La Coruna.png</file>
+        <file>Image/ico/XiJia/Eibar.jpg</file>
+        <file>Image/ico/XiJia/Eibar.png</file>
+        <file>Image/ico/XiJia/Espanyol.jpg</file>
+        <file>Image/ico/XiJia/Espanyol.png</file>
+        <file>Image/ico/XiJia/Granada.jpg</file>
+        <file>Image/ico/XiJia/Granada.png</file>
+        <file>Image/ico/XiJia/Las Palmas.jpg</file>
+        <file>Image/ico/XiJia/Las Palmas.png</file>
+        <file>Image/ico/XiJia/Leganes.jpg</file>
+        <file>Image/ico/XiJia/Leganes.png</file>
+        <file>Image/ico/XiJia/Malaga.jpg</file>
+        <file>Image/ico/XiJia/Malaga.png</file>
+        <file>Image/ico/XiJia/Osasuna.jpg</file>
+        <file>Image/ico/XiJia/Osasuna.png</file>
+        <file>Image/ico/XiJia/Real Betis.jpg</file>
+        <file>Image/ico/XiJia/Real Betis.png</file>
+        <file>Image/ico/XiJia/Real Madrid.jpg</file>
+        <file>Image/ico/XiJia/Real Madrid.png</file>
+        <file>Image/ico/XiJia/Real Sociedad.jpg</file>
+        <file>Image/ico/XiJia/Real Sociedad.png</file>
+        <file>Image/ico/XiJia/Sevilla.jpg</file>
+        <file>Image/ico/XiJia/Sevilla.png</file>
+        <file>Image/ico/XiJia/Sporting Gijon.jpg</file>
+        <file>Image/ico/XiJia/Sporting Gijon.png</file>
+        <file>Image/ico/XiJia/Valencia.jpg</file>
+        <file>Image/ico/XiJia/Valencia.png</file>
+        <file>Image/ico/XiJia/Villarreal.jpg</file>
+        <file>Image/ico/XiJia/Villarreal.png</file>
+        <file>Image/ico/YiJia/AC Milan.jpg</file>
+        <file>Image/ico/YiJia/AC Milan.png</file>
+        <file>Image/ico/YiJia/Atalanta.jpg</file>
+        <file>Image/ico/YiJia/Atalanta.png</file>
+        <file>Image/ico/YiJia/Bologna.jpg</file>
+        <file>Image/ico/YiJia/Bologna.png</file>
+        <file>Image/ico/YiJia/Cagliari.jpg</file>
+        <file>Image/ico/YiJia/Cagliari.png</file>
+        <file>Image/ico/YiJia/Chievo.jpg</file>
+        <file>Image/ico/YiJia/Chievo.png</file>
+        <file>Image/ico/YiJia/Crotone.jpg</file>
+        <file>Image/ico/YiJia/Crotone.png</file>
+        <file>Image/ico/YiJia/Empoli.jpg</file>
+        <file>Image/ico/YiJia/Empoli.png</file>
+        <file>Image/ico/YiJia/Fiorentina.jpg</file>
+        <file>Image/ico/YiJia/Fiorentina.png</file>
+        <file>Image/ico/YiJia/Genoa.jpg</file>
+        <file>Image/ico/YiJia/Genoa.png</file>
+        <file>Image/ico/YiJia/Inter.jpg</file>
+        <file>Image/ico/YiJia/Inter.png</file>
+        <file>Image/ico/YiJia/Juventus.jpg</file>
+        <file>Image/ico/YiJia/Juventus.png</file>
+        <file>Image/ico/YiJia/Lazio.jpg</file>
+        <file>Image/ico/YiJia/Lazio.png</file>
+        <file>Image/ico/YiJia/Napoli.jpg</file>
+        <file>Image/ico/YiJia/Napoli.png</file>
+        <file>Image/ico/YiJia/Palermo.jpg</file>
+        <file>Image/ico/YiJia/Palermo.png</file>
+        <file>Image/ico/YiJia/Pescara.jpg</file>
+        <file>Image/ico/YiJia/Pescara.png</file>
+        <file>Image/ico/YiJia/Roma.jpg</file>
+        <file>Image/ico/YiJia/Roma.png</file>
+        <file>Image/ico/YiJia/Sampdoria.jpg</file>
+        <file>Image/ico/YiJia/Sampdoria.png</file>
+        <file>Image/ico/YiJia/Sassuolo.jpg</file>
+        <file>Image/ico/YiJia/Sassuolo.png</file>
+        <file>Image/ico/YiJia/Torino.jpg</file>
+        <file>Image/ico/YiJia/Torino.png</file>
+        <file>Image/ico/YiJia/Udinese.jpg</file>
+        <file>Image/ico/YiJia/Udinese.png</file>
+        <file>Image/ico/YinChao/Arsenal.jpg</file>
+        <file>Image/ico/YinChao/Arsenal.png</file>
+        <file>Image/ico/YinChao/Bournemouth.jpg</file>
+        <file>Image/ico/YinChao/Bournemouth.png</file>
+        <file>Image/ico/YinChao/Burnley.jpg</file>
+        <file>Image/ico/YinChao/Burnley.png</file>
+        <file>Image/ico/YinChao/Chelsea.jpg</file>
+        <file>Image/ico/YinChao/Chelsea.png</file>
+        <file>Image/ico/YinChao/Crystal Palace.jpg</file>
+        <file>Image/ico/YinChao/Crystal Palace.png</file>
+        <file>Image/ico/YinChao/Everton.jpg</file>
+        <file>Image/ico/YinChao/Everton.png</file>
+        <file>Image/ico/YinChao/Hull.jpg</file>
+        <file>Image/ico/YinChao/Hull.png</file>
+        <file>Image/ico/YinChao/Leicester.jpg</file>
+        <file>Image/ico/YinChao/Leicester.png</file>
+        <file>Image/ico/YinChao/Liverpool.jpg</file>
+        <file>Image/ico/YinChao/Liverpool.png</file>
+        <file>Image/ico/YinChao/Manchester City.jpg</file>
+        <file>Image/ico/YinChao/Manchester City.png</file>
+        <file>Image/ico/YinChao/Manchester United.jpg</file>
+        <file>Image/ico/YinChao/Manchester United.png</file>
+        <file>Image/ico/YinChao/Middlesbrough.jpg</file>
+        <file>Image/ico/YinChao/Middlesbrough.png</file>
+        <file>Image/ico/YinChao/Southampton.jpg</file>
+        <file>Image/ico/YinChao/Southampton.png</file>
+        <file>Image/ico/YinChao/Stoke.jpg</file>
+        <file>Image/ico/YinChao/Stoke.png</file>
+        <file>Image/ico/YinChao/Sunderland.jpg</file>
+        <file>Image/ico/YinChao/Sunderland.png</file>
+        <file>Image/ico/YinChao/Swansea.jpg</file>
+        <file>Image/ico/YinChao/Swansea.png</file>
+        <file>Image/ico/YinChao/Tottenham.jpg</file>
+        <file>Image/ico/YinChao/Tottenham.png</file>
+        <file>Image/ico/YinChao/Watford.jpg</file>
+        <file>Image/ico/YinChao/Watford.png</file>
+        <file>Image/ico/YinChao/West Bromwich Albion.jpg</file>
+        <file>Image/ico/YinChao/West Bromwich Albion.png</file>
+        <file>Image/ico/YinChao/West Ham.jpg</file>
+        <file>Image/ico/YinChao/West Ham.png</file>
+        <file>Image/Alaves.png</file>
+        <file>Image/Athletic Club.png</file>
+        <file>Image/Atletico Madrid.png</file>
+        <file>Image/Barcelona.png</file>
+        <file>Image/Celta Vigo.png</file>
+        <file>Image/Eibar.png</file>
+        <file>Image/Espanyol.png</file>
+        <file>Image/Granada.png</file>
+        <file>Image/Las Palmas.png</file>
+        <file>Image/Leganes.png</file>
+        <file>Image/Malaga.png</file>
+        <file>Image/Osasuna.png</file>
+        <file>Image/Real Betis.png</file>
+        <file>Image/Real Madrid.png</file>
+        <file>Image/Real Sociedad.png</file>
+        <file>Image/Sevilla.png</file>
+        <file>Image/Sporting Gijon.png</file>
+        <file>Image/Villarreal.png</file>
     </qresource>
 </RCC>
