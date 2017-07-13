@@ -1,0 +1,362 @@
+{
+	"Swansea : West Brom": {
+		"date": "Sun, 21-May-17",
+		"home": "Swansea",
+		"away": "West Brom",
+		"list": {
+			"home": {
+				"possession": "65.3",
+				"ratings": "6.92",
+				"dispossessed": "16",
+				"corners": "7",
+				"pass_success": "87",
+				"tackles": "17",
+				"dribbles": "9",
+				"shots": "12",
+				"aerials_won": "18"
+			},
+			"away": {
+				"possession": "34.7",
+				"ratings": "6.48",
+				"dispossessed": "14",
+				"corners": "4",
+				"pass_success": "79",
+				"tackles": "18",
+				"dribbles": "2",
+				"shots": "16",
+				"aerials_won": "12"
+			}
+		},
+		"result": "2 : 1"
+	},
+	"Manchester City : West Brom": {
+		"date": "Tue, 16-May-17",
+		"home": "Manchester City",
+		"away": "West Brom",
+		"list": {
+			"home": {
+				"possession": "70.8",
+				"ratings": "7.28",
+				"aerials_won": "15",
+				"corners": "7",
+				"pass_success": "88",
+				"tackles": "24",
+				"dribbles": "14",
+				"shots": "21",
+				"dispossessed": "8"
+			},
+			"away": {
+				"possession": "29.2",
+				"ratings": "6.36",
+				"aerials_won": "6",
+				"corners": "1",
+				"pass_success": "74",
+				"tackles": "11",
+				"dribbles": "9",
+				"shots": "5",
+				"dispossessed": "20"
+			}
+		},
+		"result": "3 : 1"
+	},
+	"West Brom : Leicester": {
+		"date": "Sat, 29-04-17",
+		"home": "West Brom",
+		"away": "Leicester",
+		"list": {
+			"home": {
+				"possession": "54.8",
+				"ratings": "6.55",
+				"aerials_won": "35",
+				"corners": "5",
+				"pass_success": "75",
+				"tackles": "16",
+				"dribbles": "8",
+				"shots": "16",
+				"dispossessed": "11"
+			},
+			"away": {
+				"possession": "45.2",
+				"ratings": "7.01",
+				"aerials_won": "16",
+				"corners": "6",
+				"pass_success": "70",
+				"tackles": "17",
+				"dribbles": "6",
+				"shots": "6",
+				"dispossessed": "12"
+			}
+		},
+		"result": "0 : 1"
+	},
+	"West Brom : Arsenal": {
+		"date": "Sat, 18-03-17",
+		"home": "West Brom",
+		"away": "Arsenal",
+		"list": {
+			"home": {
+				"possession": "23.3",
+				"ratings": "7.07",
+				"dispossessed": "7",
+				"corners": "4",
+				"pass_success": "59",
+				"tackles": "14",
+				"dribbles": "10",
+				"shots": "12",
+				"aerials_won": "12"
+			},
+			"away": {
+				"possession": "76.7",
+				"ratings": "6.50",
+				"dispossessed": "12",
+				"corners": "5",
+				"pass_success": "88",
+				"tackles": "10",
+				"dribbles": "10",
+				"shots": "11",
+				"aerials_won": "17"
+			}
+		},
+		"result": "3 : 1"
+	},
+	"West Brom : Chelsea": {
+		"date": "Fri, 12-05-17",
+		"home": "West Brom",
+		"away": "Chelsea",
+		"list": {
+			"home": {
+				"possession": "32.4",
+				"ratings": "6.58",
+				"aerials_won": "15",
+				"corners": "5",
+				"pass_success": "74",
+				"tackles": "18",
+				"dribbles": "6",
+				"shots": "7",
+				"dispossessed": "3"
+			},
+			"away": {
+				"possession": "67.6",
+				"ratings": "7.02",
+				"aerials_won": "14",
+				"corners": "8",
+				"pass_success": "88",
+				"tackles": "7",
+				"dribbles": "8",
+				"shots": "24",
+				"dispossessed": "11"
+			}
+		},
+		"result": "0 : 1"
+	},
+	"West Brom : Liverpool": {
+		"date": "Sun, 16-04-17",
+		"home": "West Brom",
+		"away": "Liverpool",
+		"list": {
+			"home": {
+				"possession": "36.3",
+				"ratings": "6.30",
+				"dispossessed": "14",
+				"corners": "4",
+				"pass_success": "68",
+				"tackles": "15",
+				"dribbles": "9",
+				"shots": "7",
+				"aerials_won": "23"
+			},
+			"away": {
+				"possession": "63.7",
+				"ratings": "7.29",
+				"dispossessed": "11",
+				"corners": "4",
+				"pass_success": "82",
+				"tackles": "21",
+				"dribbles": "15",
+				"shots": "15",
+				"aerials_won": "24"
+			}
+		},
+		"result": "0 : 1"
+	},
+	"West Brom : Crystal Palace": {
+		"date": "Sat, 04-03-17",
+		"home": "West Brom",
+		"away": "Crystal Palace",
+		"list": {
+			"home": {
+				"possession": "51.4",
+				"ratings": "6.22",
+				"dispossessed": "17",
+				"corners": "5",
+				"pass_success": "72",
+				"tackles": "13",
+				"dribbles": "1",
+				"shots": "11",
+				"aerials_won": "14"
+			},
+			"away": {
+				"possession": "48.6",
+				"ratings": "7.36",
+				"dispossessed": "7",
+				"corners": "5",
+				"pass_success": "70",
+				"tackles": "21",
+				"dribbles": "12",
+				"shots": "10",
+				"aerials_won": "37"
+			}
+		},
+		"result": "0 : 2"
+	},
+	"Watford : West Brom": {
+		"date": "Tue, 04-04-17",
+		"home": "Watford",
+		"away": "West Brom",
+		"list": {
+			"home": {
+				"possession": "55.6",
+				"ratings": "7.06",
+				"aerials_won": "15",
+				"corners": "5",
+				"pass_success": "85",
+				"tackles": "20",
+				"dribbles": "6",
+				"shots": "9",
+				"dispossessed": "4"
+			},
+			"away": {
+				"possession": "44.4",
+				"ratings": "6.24",
+				"aerials_won": "14",
+				"corners": "6",
+				"pass_success": "77",
+				"tackles": "12",
+				"dribbles": "11",
+				"shots": "18",
+				"dispossessed": "13"
+			}
+		},
+		"result": "2 : 0"
+	},
+	"Everton : West Brom": {
+		"date": "Sat, 11-03-17",
+		"home": "Everton",
+		"away": "West Brom",
+		"list": {
+			"home": {
+				"possession": "62.8",
+				"ratings": "7.20",
+				"aerials_won": "16",
+				"corners": "4",
+				"pass_success": "81",
+				"tackles": "11",
+				"dribbles": "7",
+				"shots": "16",
+				"dispossessed": "12"
+			},
+			"away": {
+				"possession": "37.2",
+				"ratings": "6.21",
+				"aerials_won": "21",
+				"corners": "6",
+				"pass_success": "70",
+				"tackles": "20",
+				"dribbles": "9",
+				"shots": "5",
+				"dispossessed": "8"
+			}
+		},
+		"result": "3 : 0"
+	},
+	"West Brom : Southampton": {
+		"date": "Sat, 08-04-17",
+		"home": "West Brom",
+		"away": "Southampton",
+		"list": {
+			"home": {
+				"possession": "41.9",
+				"ratings": "6.52",
+				"dispossessed": "15",
+				"corners": "7",
+				"pass_success": "73",
+				"tackles": "11",
+				"dribbles": "8",
+				"shots": "17",
+				"aerials_won": "18"
+			},
+			"away": {
+				"possession": "58.1",
+				"ratings": "7.19",
+				"dispossessed": "10",
+				"corners": "3",
+				"pass_success": "82",
+				"tackles": "21",
+				"dribbles": "2",
+				"shots": "10",
+				"aerials_won": "22"
+			}
+		},
+		"result": "0 : 1"
+	},
+	"Burnley : West Brom": {
+		"date": "Sat, 06-05-17",
+		"home": "Burnley",
+		"away": "West Brom",
+		"list": {
+			"home": {
+				"possession": "55.1",
+				"ratings": "6.63",
+				"dispossessed": "8",
+				"corners": "5",
+				"pass_success": "71",
+				"tackles": "11",
+				"dribbles": "3",
+				"shots": "14",
+				"aerials_won": "21"
+			},
+			"away": {
+				"possession": "44.9",
+				"ratings": "6.75",
+				"dispossessed": "10",
+				"corners": "8",
+				"pass_success": "63",
+				"tackles": "14",
+				"dribbles": "9",
+				"shots": "11",
+				"aerials_won": "34"
+			}
+		},
+		"result": "2 : 2"
+	},
+	"Man Utd : West Brom": {
+		"date": "Sat, 01-04-17",
+		"home": "Man Utd",
+		"away": "West Brom",
+		"list": {
+			"home": {
+				"possession": "74.8",
+				"ratings": "6.89",
+				"aerials_won": "14",
+				"corners": "6",
+				"pass_success": "88",
+				"tackles": "15",
+				"dribbles": "13",
+				"shots": "18",
+				"dispossessed": "8"
+			},
+			"away": {
+				"possession": "25.2",
+				"ratings": "6.83",
+				"aerials_won": "12",
+				"corners": "1",
+				"pass_success": "64",
+				"tackles": "18",
+				"dribbles": "7",
+				"shots": "3",
+				"dispossessed": "13"
+			}
+		},
+		"result": "0 : 0"
+	}
+}
