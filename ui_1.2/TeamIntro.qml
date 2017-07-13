@@ -95,7 +95,7 @@ Rectangle{
         target: data_controll
         onTeamDataChanged:{
             team_name.text=data_controll.TeamName
-            team_img.source="file:///C:/Users/adminn/Desktop/ui_1.2/"+data_controll.LeagueName+"/"+data_controll.TeamName+".png"
+            team_img.source="./img/"+data_controll.LeagueName+"/"+data_controll.TeamName+".png"
             //lock_team.border.color="transparent"
             //unlock_team.border.color="transparent"
             popup.close()

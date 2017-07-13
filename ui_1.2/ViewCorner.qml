@@ -33,6 +33,7 @@ Item {
         }
         BarSeries {
             id: cmp
+            opacity: 0.0
             axisX: BarCategoryAxis {
                 visible: false
                 categories: ["1","2","3","4","5","6","7","8","9","10"]
@@ -54,19 +55,18 @@ Item {
     }
 
     Component.onCompleted: {
-        ds1.preparebarseries(series,data_controll.LeagueName,data_controll.TeamName,"corners")
-        ds1.preparebarseries(cmp,data_controll.LeagueName,"Barcelona","corners")
+        ds1.preparebarseries(series,data_controll.LeagueName,data_controll.TeamName,"corners",false)
+        ds1.preparebarseries(cmp,"","","",true)
     }
     Connections{
         target: data_controll
         onTeamDataChanged:{
-            ds1.preparebarset(set,data_controll.LeagueName,data_controll.TeamName,"corners")
+            ds1.preparebarseries(series,data_controll.LeagueName,data_controll.TeamName,"corners",false)
+            ds1.preparebarseries(cmp,data_controll.LeagueLock,data_controll.TeamLock,"corners",true)
         }
-    }
-    Connections{
-        target: data_controll
-        onLeagueDataChanged:{
-            ds1.preparebarset(set,data_controll.LeagueName,data_controll.TeamName,"corners")
+        onTeamLockChanged:{
+            ds1.preparebarseries(series,data_controll.LeagueName,data_controll.TeamName,"corners",false)
+            ds1.preparebarseries(cmp,data_controll.LeagueLock,data_controll.TeamLock,"corners",true)
         }
     }
     //![1]

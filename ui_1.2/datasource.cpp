@@ -9,17 +9,23 @@ void datasource::preparelineseries(QLineSeries* series, QString league, QString 
         series->setVisible(false);
     else
         series->setVisible(true);
+    //for(int i=max(0,data.size()-10);i<data.size();i++)
+    int j=1;
     for(int i=max(0,data.size()-10);i<data.size();i++)
     {
-        series->append(1+i,data[i].data);
+        series->append(j++,data[i].data);
         qDebug("%d %f",i,data[i].data);
     }
 }
 
-void datasource::preparebarseries(QBarSeries* series,QString league, QString team, QString attr)
+void datasource::preparebarseries(QBarSeries* series,QString league, QString team, QString attr, bool lock)
 {
     series->clear();
     QBarSet* set=new QBarSet(team);
+    if(!lock)
+        set->setColor("limegreen");
+    else
+        set->setColor("lightgreen");
     getdata(league.toStdString(),team.toStdString(),attr.toStdString());
     if(!data.size())
         series->setVisible(false);
@@ -59,9 +65,10 @@ void datasource::getdata (string league, string team, string attr) {
         dated datedtmp;
         //int dateint = datetoint(dom[itr->name.GetString()]["date"].GetString());
         datedtmp.date = datetoint(dom[itr->name.GetString()]["date"].GetString());
-        if(!strcmp(dom[itr->name.GetString()]["home"].GetString(),team.c_str()))
+        if(!strcmp(dom[itr->name.GetString()]["home"].GetString(),team.c_str()) &&
+           !dom[itr->name.GetString()]["list"]["home"][attr.c_str()].IsNull())
             datedtmp.data = atof(dom[itr->name.GetString()]["list"]["home"][attr.c_str()].GetString());
-        else
+        else if(!dom[itr->name.GetString()]["list"]["home"][attr.c_str()].IsNull())
             datedtmp.data = atof(dom[itr->name.GetString()]["list"]["away"][attr.c_str()].GetString());
         //attr = new String(str.getBytes("gbk"),"uft-8");
         data.push_back(datedtmp);

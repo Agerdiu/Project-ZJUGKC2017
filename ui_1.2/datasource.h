@@ -37,7 +37,7 @@ class datasource : public QObject
     Q_OBJECT
 public:
     Q_INVOKABLE void preparelineseries(QLineSeries* series,QString league, QString team, QString attr);
-    Q_INVOKABLE void preparebarseries(QBarSeries *series, QString league, QString team, QString attr);
+    Q_INVOKABLE void preparebarseries(QBarSeries *series, QString league, QString team, QString attr,bool lock);
 private:
     enum months {Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec};
     void getdata(string league, string team, string attr);
