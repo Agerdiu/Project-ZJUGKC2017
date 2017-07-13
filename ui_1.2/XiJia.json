@@ -1,0 +1,164 @@
+{
+	"Teams": {
+		"1": {
+			"rank": "1",
+			"wins": "29",
+			"point": "93",
+			"draws": "6",
+			"name": "Real Madrid",
+			"loses": "3"
+		},
+		"2": {
+			"rank": "2",
+			"wins": "28",
+			"point": "90",
+			"draws": "6",
+			"name": "Barcelona",
+			"loses": "4"
+		},
+		"3": {
+			"rank": "3",
+			"wins": "23",
+			"point": "78",
+			"draws": "9",
+			"name": "Atletico Madrid",
+			"loses": "6"
+		},
+		"4": {
+			"rank": "4",
+			"wins": "21",
+			"point": "72",
+			"draws": "9",
+			"name": "Sevilla",
+			"loses": "8"
+		},
+		"5": {
+			"rank": "5",
+			"wins": "19",
+			"point": "67",
+			"draws": "10",
+			"name": "Villarreal",
+			"loses": "9"
+		},
+		"6": {
+			"rank": "6",
+			"wins": "19",
+			"point": "64",
+			"draws": "7",
+			"name": "Real Sociedad",
+			"loses": "12"
+		},
+		"7": {
+			"rank": "7",
+			"wins": "19",
+			"point": "63",
+			"draws": "6",
+			"name": "Athletic Club",
+			"loses": "13"
+		},
+		"8": {
+			"rank": "8",
+			"wins": "15",
+			"point": "56",
+			"draws": "11",
+			"name": "Espanyol",
+			"loses": "12"
+		},
+		"9": {
+			"rank": "9",
+			"wins": "14",
+			"point": "55",
+			"draws": "13",
+			"name": "Alaves",
+			"loses": "11"
+		},
+		"10": {
+			"rank": "10",
+			"wins": "15",
+			"point": "54",
+			"draws": "9",
+			"name": "Eibar",
+			"loses": "14"
+		},
+		"11": {
+			"rank": "11",
+			"wins": "12",
+			"point": "46",
+			"draws": "10",
+			"name": "Malaga",
+			"loses": "16"
+		},
+		"12": {
+			"rank": "12",
+			"wins": "13",
+			"point": "46",
+			"draws": "7",
+			"name": "Valencia",
+			"loses": "18"
+		},
+		"13": {
+			"rank": "13",
+			"wins": "13",
+			"point": "45",
+			"draws": "6",
+			"name": "Celta Vigo",
+			"loses": "19"
+		},
+		"14": {
+			"rank": "14",
+			"wins": "10",
+			"point": "39",
+			"draws": "9",
+			"name": "Las Palmas",
+			"loses": "19"
+		},
+		"15": {
+			"rank": "15",
+			"wins": "10",
+			"point": "39",
+			"draws": "9",
+			"name": "Real Betis",
+			"loses": "19"
+		},
+		"16": {
+			"rank": "16",
+			"wins": "8",
+			"point": "36",
+			"draws": "12",
+			"name": "Deportivo La Coruna",
+			"loses": "18"
+		},
+		"17": {
+			"rank": "17",
+			"wins": "8",
+			"point": "35",
+			"draws": "11",
+			"name": "Leganes",
+			"loses": "19"
+		},
+		"18": {
+			"rank": "18",
+			"wins": "7",
+			"point": "31",
+			"draws": "10",
+			"name": "Sporting Gijon",
+			"loses": "21"
+		},
+		"19": {
+			"rank": "19",
+			"wins": "4",
+			"point": "22",
+			"draws": "10",
+			"name": "Osasuna",
+			"loses": "24"
+		},
+		"20": {
+			"rank": "20",
+			"wins": "4",
+			"point": "20",
+			"draws": "8",
+			"name": "Granada",
+			"loses": "26"
+		}
+	}
+}
