@@ -4,6 +4,8 @@
 #include <QAbstractItemModel>
 #include <QVector>
 #include <QLineSeries>
+#include <QBarSeries>
+#include <QBarSet>
 #include <iostream>
 #include <algorithm>
 #include "rapidjson/document.h"
@@ -34,7 +36,8 @@ class datasource : public QObject
 
     Q_OBJECT
 public:
-    Q_INVOKABLE void prepare(QLineSeries* series,QString league, QString team, QString attr);
+    Q_INVOKABLE void preparelineseries(QLineSeries* series,QString league, QString team, QString attr);
+    Q_INVOKABLE void preparebarseries(QBarSeries *series, QString league, QString team, QString attr);
 private:
     enum months {Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec};
     void getdata(string league, string team, string attr);

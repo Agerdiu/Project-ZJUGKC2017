@@ -33,7 +33,7 @@ Item {
         model: ListModel {
             ListElement {component: "ViewPossession.qml"}
             ListElement {component: "ViewRating.qml"}
-            ListElement {component: "ViewCorners.qml"}
+            ListElement {component: "ViewCorner.qml"}
         }
 
         delegate: Loader {

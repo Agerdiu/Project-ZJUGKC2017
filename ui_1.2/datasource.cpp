@@ -1,15 +1,39 @@
 #include "datasource.h"
 
-void datasource::prepare(QLineSeries* series, QString league, QString team, QString attr)
+void datasource::preparelineseries(QLineSeries* series, QString league, QString team, QString attr)
 {
     series->clear();
+    series->setName(team);
     getdata(league.toStdString(), team.toStdString(),attr.toStdString());
+    if(!data.size())
+        series->setVisible(false);
+    else
+        series->setVisible(true);
     for(int i=max(0,data.size()-10);i<data.size();i++)
     {
         series->append(1+i,data[i].data);
         qDebug("%d %f",i,data[i].data);
     }
 }
+
+void datasource::preparebarseries(QBarSeries* series,QString league, QString team, QString attr)
+{
+    series->clear();
+    QBarSet* set=new QBarSet(team);
+    getdata(league.toStdString(),team.toStdString(),attr.toStdString());
+    if(!data.size())
+        series->setVisible(false);
+    else
+        series->setVisible(true);
+
+    for(int i=max(0,data.size()-10);i<data.size();i++)
+    {
+        set->append(data[i].data);
+        qDebug("%d %f",i,data[i].data);
+    }
+    series->append(set);
+}
+
 
 void datasource::getdata (string league, string team, string attr) {
     data.clear();

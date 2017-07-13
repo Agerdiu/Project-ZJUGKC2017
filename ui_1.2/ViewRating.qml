@@ -11,7 +11,7 @@ Item {
         titleFont.bold: true
         titleFont.pixelSize: 32
         anchors.fill: parent
-        legend.visible: false
+        legend.visible: true
         antialiasing: true
         dropShadowEnabled: true
         backgroundRoundness: 0
@@ -38,24 +38,32 @@ Item {
             pointLabelsFormat:"@yPoint"
             color: "blue"
         }
+        LineSeries {
+            id: cmp
+            axisX: axisX
+            axisY: axisY
+            pointLabelsVisible: false
+            style: Qt.DashLine
+            width: 1
+        }
     }
     Datasource{
         id: ds1
     }
-
     Component.onCompleted: {
-        ds1.prepare(series1,"XiJia","Alaves","ratings");
+        ds1.preparelineseries(series1,data_controll.LeagueName,data_controll.TeamName,"ratings")
+        ds1.preparelineseries(cmp,"XiJia","Barcelona","ratings")
     }
     Connections{
         target: data_controll
         onTeamDataChanged:{
-            ds1.prepare(series1,data_controll.LeagueName,data_controll.TeamName,"ratings")
+            ds1.preparelineseries(series1,data_controll.LeagueName,data_controll.TeamName,"ratings")
         }
     }
     Connections{
         target: data_controll
         onLeagueDataChanged:{
-            ds1.prepare(series1,data_controll.LeagueName,data_controll.TeamName,"ratings")
+            ds1.preparelineseries(series1,data_controll.LeagueName,data_controll.TeamName,"ratings")
         }
     }
     //![1]
