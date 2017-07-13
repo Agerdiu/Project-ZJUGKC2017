@@ -50,7 +50,7 @@ Item {
             visible: false
             id: axisX
             min: 0
-            max: 9
+            max: 12
         }
 
         ValueAxis {
@@ -81,19 +81,17 @@ Item {
 
     Component.onCompleted: {
         ds1.preparelineseries(series1,data_controll.LeagueName,data_controll.TeamName,"possession")
-        ds1.preparelineseries(cmp,"","Barcelona","possession")
+        ds1.preparelineseries(cmp,"","","")
     }
     Connections{
         target: data_controll
         onTeamDataChanged:{
             ds1.preparelineseries(series1,data_controll.LeagueName,data_controll.TeamName,"possession")
         }
-    }
-    Connections{
-        target: data_controll
-        onLeagueDataChanged:{
-            ds1.preparelineseries(series1,data_controll.LeagueName,data_controll.TeamName,"possession")
+        onTeamLockChanged:{
+            ds1.preparelineseries(cmp,data_controll.LeagueLock,data_controll.TeamLock,"possession")
         }
     }
+
     //![1]
 }

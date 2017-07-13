@@ -3,12 +3,14 @@
 #include <QtGui>
 #include "data_controller.h"
 #include "teamdata.h"
+#include "datasource.h"
 #include <QSplashScreen>
 int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
 
     QQmlApplicationEngine engine;
+    qmlRegisterType<datasource>("datasource", 1, 0, "Datasource");
     qmlRegisterType<Data_Controller>("Data_Controller", 1, 0, "Data_Controller");
     QSplashScreen *splash = new QSplashScreen;
     splash->setPixmap(QPixmap(":/Image/Animation.png"));
