@@ -12,6 +12,7 @@ Item {
         titleFont.pixelSize: 32
         anchors.fill: parent
         legend.visible: true
+        legend.font.family:"微软雅黑"
         antialiasing: true
         dropShadowEnabled: true
         backgroundRoundness: 0
@@ -25,6 +26,7 @@ Item {
                 categories: ["1","2","3","4","5","6","7","8","9","10"]
             }
             axisY: ValueAxis{
+                labelsFont.family: "微软雅黑"
                 labelFormat: "%d"
                 tickCount: 5
                 min:0

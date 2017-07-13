@@ -41,6 +41,8 @@ Item {
         titleFont.pixelSize: 32
         anchors.fill: parent
         legend.visible: true
+        legend.font.family:"微软雅黑"
+
         antialiasing: true
         dropShadowEnabled: true
         backgroundRoundness: 0
@@ -54,6 +56,7 @@ Item {
         }
 
         ValueAxis {
+            labelsFont.family: "微软雅黑"
             id: axisY
             min: 0
             max: 100
