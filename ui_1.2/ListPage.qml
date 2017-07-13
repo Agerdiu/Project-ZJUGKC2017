@@ -11,17 +11,8 @@ ScrollView {
     ListView {
         id: team_listview
         anchors.fill: parent
-        //model: data_controll.teamlist
         model: data_controll.getTeamList("XiJia")
-        /*Connections{
-            target: data_controll
-            onLeagueDataChanged:{
-                team_listview.model=data_controll.teamlist
-            }
-        }*/
         delegate: Delegate {
-            //text: "Item #" + modelData
-
             rank:model.modelData.TeamListRank
             name: model.modelData.TeamListName;
             win: model.modelData.TeamListWin;
@@ -30,6 +21,7 @@ ScrollView {
             score: model.modelData.TeamListScore;
         }
         highlight: Rectangle{
+            id:highlight_rect
             color: "lightsteelblue";
             radius: 3;
             opacity: 0.5
@@ -41,6 +33,7 @@ ScrollView {
             id: banner
             width: parent.width;height: 40
             color: "green"
+            state: "green"
             Text{
                 id:teamname
                 anchors.left: parent.left
@@ -91,6 +84,29 @@ ScrollView {
                 font.pointSize: 10
                 color: "white"
             }
+            states:
+            [
+                State{
+                    name:"green"
+                    PropertyChanges {
+                        target: banner
+                        color:"green"
+                    }
+                },
+                State {
+                    name:"purple"
+                    PropertyChanges {
+                        target: banner
+                        color:"purple"
+                    }
+                }
+            ]
+        Connections{
+           target:sysbtngrp
+           onSkin:{
+              banner.state=="green"?banner.state="purple":banner.state="green"
+               }
+            }
         }
     Connections{
       target: data_controll
@@ -99,6 +115,7 @@ ScrollView {
          //console.log(team_listview.model.modelData.toString())
       }
     }
+
     Component.onCompleted: {
         data_controll.getTeamList("XiJia")
     }

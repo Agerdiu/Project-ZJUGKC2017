@@ -66,7 +66,7 @@ ApplicationWindow {
         width: 125
         height: 12
         color: "#ffffff"
-        text: "测试程序 by 张懿"
+        text: "Football Manager"
         font.pointSize: 9
         font.family: "微软雅黑"
         font.pixelSize: 12
