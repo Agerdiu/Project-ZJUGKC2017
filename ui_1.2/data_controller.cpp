@@ -4,10 +4,12 @@
 #include <QJsonValue>
 #include <QJsonObject>
 #include <QJsonArray>
+#include <QDebug>
 Data_Controller::Data_Controller(QObject *parent) : QObject(parent)
 {
     league_index="XiJia";
     team_name="球队0";
+    Lock=false;
 }
 /*Data_Controller::~Data_Controller()
 {
@@ -46,14 +48,14 @@ QList<QObject*>Data_Controller::getTeamList(QString league_name)
     QFile file;
     qWarning("The League Name is %s\n",league_name.toUtf8().data());
     if(league_name=="XiJia")
-        file.setFileName("XiJia.txt");
+        file.setFileName("C:/Users/adminn/Desktop/ui_1.2/XiJia.txt");
     else if(league_name=="DeJia")
-        file.setFileName("DeJia.txt");
+        file.setFileName("C:/Users/adminn/Desktop/ui_1.2/DeJia.txt");
     else if(league_name=="YinChao")
-        file.setFileName("YinChao.txt");
+        file.setFileName("C:/Users/adminn/Desktop/ui_1.2/YinChao.txt");
     else if(league_name=="YiJia")
-        file.setFileName("YiJia.txt");
-    else  file.setFileName("XiJia.txt");
+        file.setFileName("C:/Users/adminn/Desktop/ui_1.2/YiJia.txt");
+    else  file.setFileName("C:/Users/adminn/Desktop/ui_1.2/XiJia.txt");
     file.open(QIODevice::ReadOnly | QIODevice::Text);
     QString val = file.readAll();
     //qWarning(val.toUtf8().data());
@@ -74,7 +76,6 @@ QList<QObject*>Data_Controller::getTeamList(QString league_name)
                 eachTeamsJsonObject["point"].toString());
         TeamList2.append(tmpTeams);
     }
-    qWarning("%d\n",TeamList2.length());
     qSort(TeamList2.begin(),TeamList2.end(),compareData);
     setTeamData(TeamList2[0]->getTeamListName());
     for(int i=0;i<TeamList2.length();i++)
@@ -86,10 +87,9 @@ QList<QObject*>Data_Controller::getTeamList(QString league_name)
 QObject* Data_Controller::getTeamInfo(QString team_name)
 {
     QObject*info1=new Team_info("","","","","","","","");
-
     QFile file;
     //file.setFileName(team_name.append("/_info.txt"));
-    file.setFileName("./teamlist/"+league_index+"_info.JSON");
+    file.setFileName("C:/Users/adminn/Desktop/ui_1.2/teamlist/"+league_index+"_info.JSON");
     file.open(QIODevice::ReadOnly | QIODevice::Text);
     QString val = file.readAll();
     file.close();
@@ -97,7 +97,6 @@ QObject* Data_Controller::getTeamInfo(QString team_name)
     QJsonObject rootObject = d.object();
     QJsonValue TeamsJsonValue = rootObject.value(QString("info_list"));
     if(TeamsJsonValue.isArray()){
-        qWarning("The Document is Array\n");
         QJsonArray info_array = TeamsJsonValue.toArray();
         for(int i=0;i<info_array.size();i++){
            QJsonValue value = info_array.at(i);
@@ -120,11 +119,23 @@ QObject* Data_Controller::getTeamInfo(QString team_name)
     emit signalInfo(info1);
     return info1;
 }
+void Data_Controller::setLock(bool lock){
+    Lock=lock;
+    if(Lock==false){
+        team_name_lock.clear();
+        league_index_lock.clear();
+    }
+    qDebug()<<Lock;
+    emit(lockChanged(lock));
+}
+bool Data_Controller::isLocked()const{
+    return Lock;
+}
 QList<QObject*> Data_Controller::getTeamMemList(QString teamname)
 {
     memlist.clear();
     QFile file;
-    file.setFileName("./YinChaoPlayer/"+teamname+"_players.JSON");
+    file.setFileName("C:/Users/adminn/Desktop/ui_1.2/"+league_index+"Player/"+teamname+"_players.JSON");
     file.open(QIODevice::ReadOnly | QIODevice::Text);
     QString val = file.readAll();
     file.close();
@@ -156,4 +167,22 @@ bool compareData(const TeamData *Team1, const TeamData *Team2)
         return false;
     }
     return true;
+}
+QString Data_Controller::getTeamLock()const{
+    return team_name_lock;
+}
+QString Data_Controller::getLeagueLock()const{
+    return league_index_lock;
+}
+void Data_Controller::setTeamLock(QString team_name){
+    if(Lock==true){
+    team_name_lock=team_name;
+    qDebug()<<"team_name_lock is"<<team_name_lock;
+    }
+}
+void Data_Controller::setLeagueLock(QString league_name){
+    if(Lock==true){
+    league_index_lock=league_name;
+    qDebug()<<"league_index_lock is"<<league_index_lock;
+    }
 }

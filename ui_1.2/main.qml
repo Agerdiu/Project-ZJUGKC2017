@@ -24,10 +24,26 @@ ApplicationWindow {
         height: 600
         fillMode: Image.TileHorizontally
         sourceSize.height: 600
-        sourceSize.width: 800
+        sourceSize.width: 900
         source: "Image/background_mainwnd.jpg"
-
-
+        state: "green"
+        states:
+        [
+            State{
+                name:"green"
+                PropertyChanges {
+                    target: skinpic
+                    source:"Image/background_mainwnd.jpg"
+                }
+            },
+            State {
+                name:"purple"
+                PropertyChanges {
+                    target: skinpic
+                    source:"Image/background_purple.jpg"
+                }
+            }
+        ]
     MouseArea { //为窗口添加鼠标事件
         anchors.fill: parent
         acceptedButtons: Qt.LeftButton //只处理鼠标左键
@@ -80,6 +96,10 @@ ApplicationWindow {
         y: 0
         onMin: mainWindow.showMinimized()
         onClose: mainWindow.close()
+        onSkin: {
+            console.log("skin has been changed")
+            skinpic.state=="green"?skinpic.state="purple":skinpic.state="green"
+        }
     }
    }
   }

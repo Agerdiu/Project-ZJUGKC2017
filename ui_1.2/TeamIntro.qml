@@ -10,7 +10,7 @@ Rectangle{
     //flickableItem.interactive: true
     id:team_intro
     contentWidth: parent.width
-    contentHeight: 800
+    contentHeight: 700
     anchors.fill: parent
     boundsBehavior: Flickable.StopAtBounds
     clip:true
@@ -19,7 +19,6 @@ Rectangle{
     Image {
         id:team_img
         source: "Image/barcelona.png"
-        //source: "http://b.hiphotos.baidu.com/baike/w%3D268%3Bg%3D0/sign=99b6d6ab4b086e066aa8384d3a331cc9/9358d109b3de9c82f077b3156b81800a19d8431d.jpg"
         width: parent.width-20
         height: parent.height-20
         anchors.left: parent.left
@@ -41,14 +40,13 @@ Rectangle{
         anchors.fill: team_Image
         onClicked: {
         popup.show()
-            console.log("233333333333")
         }
     }
     }
     Popup {
         id: popup
-        width: 400; height: 600
-        x: 100; y:100
+        width: 400; height: 520
+        x: 100; y:80
         //anchors.centerIn: parent  // 注意：使用位移动画不能用anchors定位方式
         z: 101
         visible: false;
@@ -67,17 +65,11 @@ Rectangle{
             anchors.top:parent.top
             anchors.topMargin: 5
         }
+
         MemListView{
             id:mem_list
             width:parent.width-10
             height:parent.height-10
-        }
-        MouseArea{
-            anchors.fill:parent
-            onDoubleClicked: {
-                popup.hide()
-            }
-            drag.target: mem_list.__scroller
         }
     }
     Text{
@@ -90,18 +82,8 @@ Rectangle{
        font.family: "微软雅黑"
        anchors.top:parent.top
        anchors.topMargin: 5
-    }/*
-    Text {
-        id: team_introduction
-        width: parent.width-team_Image.width
-        text: team_intro_text
-        anchors.left: team_Image.right
-        anchors.leftMargin: 20
-        anchors.right: parent.right
-        anchors.top: team_name.bottom
-        font.family: "微软雅黑"
-        wrapMode: Text.WrapAnywhere
-    }*/
+    }
+
     TeamTable{
         id:team_table
         anchors.left: team_Image.right
@@ -113,9 +95,81 @@ Rectangle{
         target: data_controll
         onTeamDataChanged:{
             team_name.text=data_controll.TeamName
-            //team_img.source="file:///C:/Users/zerorin/Desktop/ui_1.2/"+data_controll.LeagueName+"/"+data_controll.TeamName+".png"
-            team_img.source=".//img/"+data_controll.LeagueName+"/"+data_controll.TeamName+".png"
+            team_img.source="file:///C:/Users/adminn/Desktop/ui_1.2/"+data_controll.LeagueName+"/"+data_controll.TeamName+".png"
+            //lock_team.border.color="transparent"
+            //unlock_team.border.color="transparent"
             popup.close()
+        }
+    }
+    MouseArea{
+        drag.target: team_intro
+    }
+    Rectangle{
+        id:lock_team
+        anchors.top:team_Image.bottom
+        anchors.topMargin: 15
+        anchors.left: parent.left
+        anchors.leftMargin: 65
+        width: 60
+        height:30
+        radius: 4
+        border.width: 3
+        border.color: "transparent"
+        //opacity: 0.5
+        color: "hotpink"
+        Text {
+            id: lock_text
+            text: qsTr("锁定球队")
+            font.bold: true
+            color: "white"
+            opacity: 1
+            font.family: "微软雅黑"
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.verticalCenter: parent.verticalCenter
+        }
+        MouseArea{
+            anchors.fill:parent
+            onClicked: {
+                console.log("锁定球队")
+                data_controll.lock=true
+                data_controll.LeagueLock=data_controll.LeagueName
+                data_controll.TeamLock=data_controll.TeamName
+                lock_team.border.color="gray"
+                unlock_team.border.color="transparent"
+            }
+        }
+    }
+    Rectangle{
+        id:unlock_team
+        anchors.top:team_Image.bottom
+        anchors.topMargin: 15
+        anchors.left: lock_team.right
+        anchors.leftMargin: 10
+        width: 60
+        height:30
+        radius:4
+        color: "blue"
+        border.width:3
+        border.color: "transparent"
+        //opacity: 0.5
+        Text {
+            id: unlock_text
+            text: qsTr("解除锁定")
+            font.bold: true
+            color: "white"
+            opacity: 1
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.verticalCenter: parent.verticalCenter
+            font.family: "微软雅黑"
+        }
+        MouseArea{
+            anchors.fill:parent
+            onClicked: {
+                console.log("解锁球队")
+                unlock_team.border.color="gray"
+                lock_team.border.color="transparent"
+                data_controll.lock=false
+            }
         }
     }
     Rectangle{

@@ -13,9 +13,11 @@ Item {
     signal clicked
 
     Rectangle {
+        id:compare
         anchors.fill: parent
-        color: "#11ffffff"
+        color: "Ivory"
         visible: mouse.pressed
+        opacity: 0.2
     }
     Text {
         id: text_rank
@@ -121,14 +123,9 @@ Item {
         onClicked: {
             root.clicked()
             team_listview.currentIndex=index
-            console.log("Delegate "+index+" has been clicked")
             data_controll.TeamName=team_name.text
-        }
-    }/*
-    Component.onCompleted: {
-         team_img.source ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHoHxIuqD8GTAYxUXt82MehJgfrAtsPHo0C812qakLR5Gi9vxw4A"
-    }*/
-
+      }
+    }
     Connections{
         target: toolbar
         onClicked:{

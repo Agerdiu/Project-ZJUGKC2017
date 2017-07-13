@@ -1,16 +1,18 @@
 <RCC>
     <qresource prefix="/">
         <file>Analyse_data_list.qml</file>
+         <file>Image/Animation.png</file>
         <file>QChart.qml</file>
-        <file>PlayerDelegate.qml</file>
-        <file>MemListView.qml</file>
+         <file>PlayerDelegate.qml</file>
+        <file>Image/background_purple.jpg</file>
+         <file>MemListView.qml</file>
         <file>Image/background_mem_list.png</file>
         <file>TeamTable.qml</file>
         <file>View1.qml</file>
         <file>XiJia.txt</file>
         <file>Mask.qml</file>
-        <file>YiJia.txt</file>
-        <file>Popup.qml</file>
+       <file>YiJia.txt</file>
+       <file>Popup.qml</file>
         <file>DeJia.txt</file>
         <file>YinChao.txt</file>
         <file>View2.qml</file>
@@ -21,7 +23,7 @@
         <file>SysBtn.qml</file>
         <file>ScrollBar.qml</file>
         <file>Chart.js</file>
-        <file>QChart.js</file>
+	<file>QChart.js</file>
         <file>QChartGallery.js</file>
         <file>TabWidget.qml</file>
         <file>ToolBtn.qml</file>
@@ -55,7 +57,7 @@
         <file>Delegate.qml</file>
         <file>Image/background_list.jpg</file>
         <file>TeamIntro.qml</file>
-        <file>ViewPossession.qml</file>
+                <file>ViewPossession.qml</file>
         <file>ViewRating.qml</file>
         <file>img/DeJia/Augsburg.jpg</file>
         <file>img/DeJia/Augsburg.png</file>
