@@ -100,6 +100,9 @@ Item {
             console.log("Delegate "+index+" has been clicked")
             //data_controll.TeamName=team_name.text
         }
+        onDoubleClicked: {
+            popup.hide()
+        }
     }/*
     Component.onCompleted: {
          team_img.source ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHoHxIuqD8GTAYxUXt82MehJgfrAtsPHo0C812qakLR5Gi9vxw4A"
