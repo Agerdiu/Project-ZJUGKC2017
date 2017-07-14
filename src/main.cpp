@@ -3,7 +3,7 @@
 #include <QtGui>
 #include "data_controller.h"
 #include "teamdata.h"
-#include "datasource.h"
+#include "charts/datasource.h"
 #include <QSplashScreen>
 int main(int argc, char *argv[])
 {

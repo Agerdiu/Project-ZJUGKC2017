@@ -1,2 +1,4 @@
-
-build-test-Desktop_Qt_5_9_1_MSVC2017_64bit-Debug
+src/debug
+src/release
+.Debug
+.Release

@@ -26,6 +26,12 @@ SOURCES += main.cpp \
     main.cpp \
     mem_info.cpp \
     team_info.cpp \
+    teamdata.cpp \
+    charts/datasource.cpp \
+    data_controller.cpp \
+    main.cpp \
+    mem_info.cpp \
+    team_info.cpp \
     teamdata.cpp
 
 RESOURCES += qml.qrc
@@ -173,6 +179,46 @@ HEADERS += \
     charts/rapidjson/writer.h \
     charts/datasource.h \
     release/moc_predefs.h \
+    data_controller.h \
+    mem_info.h \
+    team_info.h \
+    teamdata.h \
+    charts/rapidjson/error/en.h \
+    charts/rapidjson/error/error.h \
+    charts/rapidjson/internal/biginteger.h \
+    charts/rapidjson/internal/diyfp.h \
+    charts/rapidjson/internal/dtoa.h \
+    charts/rapidjson/internal/ieee754.h \
+    charts/rapidjson/internal/itoa.h \
+    charts/rapidjson/internal/meta.h \
+    charts/rapidjson/internal/pow10.h \
+    charts/rapidjson/internal/regex.h \
+    charts/rapidjson/internal/stack.h \
+    charts/rapidjson/internal/strfunc.h \
+    charts/rapidjson/internal/strtod.h \
+    charts/rapidjson/internal/swap.h \
+    charts/rapidjson/msinttypes/inttypes.h \
+    charts/rapidjson/msinttypes/stdint.h \
+    charts/rapidjson/allocators.h \
+    charts/rapidjson/document.h \
+    charts/rapidjson/encodedstream.h \
+    charts/rapidjson/encodings.h \
+    charts/rapidjson/filereadstream.h \
+    charts/rapidjson/filewritestream.h \
+    charts/rapidjson/fwd.h \
+    charts/rapidjson/istreamwrapper.h \
+    charts/rapidjson/memorybuffer.h \
+    charts/rapidjson/memorystream.h \
+    charts/rapidjson/ostreamwrapper.h \
+    charts/rapidjson/pointer.h \
+    charts/rapidjson/prettywriter.h \
+    charts/rapidjson/rapidjson.h \
+    charts/rapidjson/reader.h \
+    charts/rapidjson/schema.h \
+    charts/rapidjson/stream.h \
+    charts/rapidjson/stringbuffer.h \
+    charts/rapidjson/writer.h \
+    charts/datasource.h \
     data_controller.h \
     mem_info.h \
     team_info.h \

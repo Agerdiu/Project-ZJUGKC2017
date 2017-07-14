@@ -41,9 +41,7 @@ public slots:
     void setTeamLock(QString team_name_lock);
     void setLeagueLock(QString league_index_lock);
 private:
-     //记录当前点击联赛名称
      QString league_index;
-     //记录当前所点球队名称
      QString team_name;
      Team_info team_info;
      QString team_name_lock;

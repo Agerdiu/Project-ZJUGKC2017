@@ -5,16 +5,13 @@
 #include <QJsonObject>
 #include <QJsonArray>
 #include <QDebug>
+
 Data_Controller::Data_Controller(QObject *parent) : QObject(parent)
 {
     league_index="XiJia";
     team_name="球队0";
     Lock=false;
 }
-/*Data_Controller::~Data_Controller()
-{
-
-}*/
 void Data_Controller::setLeagueData(QString leaguename)
 {
     league_index=leaguename;

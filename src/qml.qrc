@@ -245,12 +245,5 @@
         <file>charts/ViewRating.qml</file>
         <file>charts/ViewShots.qml</file>
         <file>charts/ViewTackles.qml</file>
-        <file>release/moc_data_controller.cpp</file>
-        <file>release/moc_datasource.cpp</file>
-        <file>release/moc_mem_info.cpp</file>
-        <file>release/moc_predefs.h</file>
-        <file>release/moc_team_info.cpp</file>
-        <file>release/moc_teamdata.cpp</file>
-        <file>release/qrc_qml.cpp</file>
     </qresource>
 </RCC>
