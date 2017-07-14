@@ -69,7 +69,8 @@ Item {
         anchors.rightMargin: 150
     }
 
-    Text {
+
+Text {
         id: team_draw
         color: "white"
         font.pointSize: 10
@@ -125,6 +126,27 @@ Item {
             team_listview.currentIndex=index
             data_controll.TeamName=team_name.text
       }
+    }
+    PropertyAnimation{
+        id:animWidthIncrease
+        target: root
+        duration:500
+        easing.type:Easing.OutBounce
+        property: 'width'
+        from:0
+        to:root.width
+    }
+    PropertyAnimation {
+        id:animFadeIn
+        target: root
+        duration: 500
+        easing.type: Easing.OutBounce
+        property: 'opacity';
+        from: 0;
+        to: root.opacity
+    }
+    Component.onCompleted: {
+        animFadeIn.start()
     }
     Connections{
         target: toolbar
