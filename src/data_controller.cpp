@@ -75,8 +75,10 @@ QList<QObject*>Data_Controller::getTeamList(QString league_name)
                 eachTeamsJsonObject["point"].toString());
         TeamList2.append(tmpTeams);
     }
-    qSort(TeamList2.begin(),TeamList2.end(),compareData);
-    setTeamData(TeamList2[0]->getTeamListName());
+    if(TeamList2.empty()==false){
+        qSort(TeamList2.begin(),TeamList2.end(),compareData);
+        setTeamData(TeamList2[0]->getTeamListName());
+    }
     for(int i=0;i<TeamList2.length();i++)
         teamlist.append(TeamList2[i]);
     emit signalList(teamlist);
